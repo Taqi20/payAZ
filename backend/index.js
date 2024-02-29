@@ -11,5 +11,3 @@ app.use("api/v1", rootRouter);
 app.listen(port, () => {
     console.log(`Server is up at port ${port}`);
 })
-
-
