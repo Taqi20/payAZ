@@ -4,3 +4,4 @@
 - created routes folder in backend and inside that index.js and user.js is creeated in which a router is created and imported it into backend/index.js
 - created 'backend/congig.js' and exported JWT secret, added cors and body-parser in 'backend/index.js'
 - created signup and signin functionality in user.js  
+- created 'backend/middleware.js' and wrote the middleware logic
