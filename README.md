@@ -6,3 +6,4 @@
 - created signup and signin functionality in user.js  
 - created 'backend/middleware.js' and wrote the middleware logic
 - added update info route in user.js 
+- added bank related Schema in db.js
