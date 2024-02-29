@@ -5,3 +5,4 @@
 - created 'backend/congig.js' and exported JWT secret, added cors and body-parser in 'backend/index.js'
 - created signup and signin functionality in user.js  
 - created 'backend/middleware.js' and wrote the middleware logic
+- added update info route in user.js 
