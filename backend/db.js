@@ -1,8 +1,10 @@
-require('dotenv').config(); //for importing from .env
+//for importing from .env
+require('dotenv').config();
 
 const mongoose = require("mongoose");
 
-mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+// mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://adminTaqi:vWpEpb0rAsnydFyq@cluster0.whexhwr.mongodb.net/");
 
 //creating a Schema for users
 const userSchema = new mongoose.Schema({
