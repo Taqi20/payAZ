@@ -9,3 +9,5 @@
 - added bank related Schema in db.js
 - Created a new router in routes/account.js and add exported it.All user balances should go to a different express router (that handles all requests on /api/v1/account ). 
 - Created a new router for accounts
+- Done with backend and tested it 
+- installed tailwind in frontend
