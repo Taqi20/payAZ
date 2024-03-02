@@ -13,7 +13,9 @@ export const Users = () => {
         axios.get("http://localhost:3000/api/v1/user/bulk?filter=" + filter)
             .then(response => {
                 setUsers(response.data.user)
-            })
+            }).catch(error => {
+                console.error("Error fetching users:", error);
+            });
     }, [ filter ])
 
     return <>
@@ -26,7 +28,7 @@ export const Users = () => {
             }} type="text" placeholder="Search users..." className="w-full px-2 py-1 border rounded border-slate-200"></input>
         </div>
         <div>
-            {users.map(user => <User user={user} />)}
+            {users && users.map(user => <User user={user} />)}
         </div>
     </>
 }
