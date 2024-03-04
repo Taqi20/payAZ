@@ -12,11 +12,12 @@ export const Users = () => {
     useEffect(() => {
         axios.get("http://localhost:3000/api/v1/user/bulk?filter=" + filter)
             .then(response => {
-                setUsers(response.data.user)
+                setUsers(response.data.users)
             }).catch(error => {
                 console.error("Error fetching users:", error);
             });
     }, [ filter ])
+
 
     return <>
         <div className="font-bold mt-6 text-lg">
@@ -40,7 +41,7 @@ function User({ user }) {
         <div className="flex">
             <div className="rounded-full h-12 w-12 bg-slate-200 flex justify-center mt-1 mr-2">
                 <div className="flex flex-col justify-center h-full text-xl">
-                    {user.firstName[ 0 ]}
+                    {user.firstName && user.firstName.length > 0 ? user.firstName[ 0 ] : ''}
                 </div>
             </div>
             <div className="flex flex-col justify-center h-ful">
